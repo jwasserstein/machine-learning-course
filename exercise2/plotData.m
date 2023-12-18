@@ -13,11 +13,10 @@ figure; hold on;
 %
 
 
+positiveClass = y == 1;
+negativeClass = y == 0;
 
-
-
-
-
+plot(X(positiveClass, 1), X(positiveClass, 2), 'k+', X(negativeClass, 1), X(negativeClass, 2), 'ko');
 
 
 % =========================================================================
